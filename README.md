@@ -1,59 +1,57 @@
-   ___    __                        ____       __                       __        
-   /   |  / /_  _________  ____     / __ \_____/ /__________ _   _______/ /____  __
-  / /| | / __ \/ ___/ __ \/ __ \   / / / / ___/ __/ ___/ __ \ | / / ___/ //_/ / / /
- / ___ |/ / / / /  / /_/ / / / /  / /_/ (__  ) /_/ /  / /_/ / |/ (__  ) ,< / /_/ / 
-/_/  |_/_/ /_/_/   \____/_/ /_/   \____/____/\__/_/   \____/|___/____/_/|_|\__, /  
-                                                                          /____/
+# Python MITM Tool
 
-Author: Ahron Ostrovsky
-Instagram: https://instagram.com/ahron_ostrovsky
-YouTube:   https://www.youtube.com/Ahron_ostrovsky
+## Description
 
---------------------------------------------------------------------------------
-NAME
-    Network ARP Spoof Detector & Attacker
-    
-DESCRIPTION
-    This tool is a Python-based ARP Spoofing simulator that allows a user to:
-    - Scan a local network for active devices
-    - Select a target device
-    - Perform ARP Poisoning to intercept traffic
-    - Sniff and display DNS requests from the victim
-    - Restore the network state upon exit
+This project is a Python-based ARP spoofing tool designed for educational and cybersecurity research purposes. It enables a user to scan a local network, select a target device, execute an ARP poisoning attack, sniff DNS traffic, and restore the network upon exit.
 
-FEATURES
-    ✔ Displays local IP, gateway, and network range
-    ✔ Beautiful colored terminal output using Colorama
-    ✔ Built-in ARP scanner using Scapy
-    ✔ DNS request sniffer from target
-    ✔ Ctrl+C support for safe network restoration
-    ✔ Cool ASCII art banner with credits
+## Features
 
-REQUIREMENTS
-    - Python 3.x
-    - Libraries: scapy, colorama
-    - Admin/root privileges
-    - OS: Windows/Linux (with slight adjustments)
+- Local network IP and gateway discovery
+- ARP-based device scanner
+- Target selection from scanned devices
+- ARP spoofing to intercept victim traffic
+- DNS request sniffer
+- Automatic network restoration on exit
+- Clean and simple terminal interface
 
-INSTALLATION
-    pip install scapy colorama
+## Requirements
 
-USAGE
-    1. Run the script as administrator:
-       > python3 arpon.py
-       
-    2. The script will:
-       - Detect your local IP and gateway
-       - Scan for active devices in your subnet
-       - Let you choose a device to attack
-       - Start poisoning and sniffing DNS
-       
-    3. Press Ctrl+C at any time to stop and restore network state
+- Python 3.x
+- Operating System: Windows or Linux (minor adjustments may be required)
+- Admin/root privileges
 
-DISCLAIMER
-    ⚠️ This tool is for educational purposes only.
-    ⚠️ Do not use on networks you do not own or have permission to test.
+### Python Libraries
 
-LICENSE
-    © 2025 Ahron Ostrovsky. All rights reserved.
-    This code is part of a cybersecurity project for the Israeli high school final exam (Bagrut).
+Install the required libraries with:
+pip install scapy colorama
+Usage
+Run the script with administrator privileges:
+
+bash
+Copy
+Edit
+python arp_mitm.py
+Workflow
+Detects local IP and gateway
+
+Scans the subnet for active devices
+
+Allows the user to select a target
+
+Performs ARP poisoning and DNS sniffing
+
+Restores network settings on Ctrl+C
+
+Legal Disclaimer
+This tool is intended for educational use only.
+Do not use it on networks you do not own or have explicit permission to test.
+
+Author
+Ahron Ostrovsky
+
+Instagram
+
+YouTube
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
